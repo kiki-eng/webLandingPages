@@ -10,7 +10,7 @@ const PricingCard = ({ plan, price, features }) => {
           <li key={index}>{feature}</li>
         ))}
       </ul>
-      <button>Subscribe</button>
+      <button>Get started</button>
     </div>
   );
 };
@@ -19,7 +19,7 @@ export const Services = (props) => {
   const pricingData = [
     {
       plan: "Free plan",
-      price: "$0.00",
+      price: "0.00",
       features: [
         "All features made available",
         "Third party wont be able to access or download your files",
@@ -28,7 +28,7 @@ export const Services = (props) => {
     },
     {
       plan: "Monthly plan",
-      price: "$19.99",
+      price: "19.99",
       features: [
         "All features made available",
         "Third party will be able to access or download your files",
@@ -38,7 +38,7 @@ export const Services = (props) => {
 
     {
       plan: "Yearly plan",
-      price: "$199.00",
+      price: "199.00",
       features: [
         "All features made available",
         "Third party wont be able to access or download your files",
