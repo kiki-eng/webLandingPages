@@ -126,7 +126,7 @@ export default function Footer() {
             </button>
           </div>
         </div>
-        <hr className="border border-black border-1 p-0 m-0" />
+        <hr className="border border-gray-400 border-1 p-0 m-0" />
 
         <div className="xl:grid xl:grid-cols-4 xl:gap-8">
           <div className="grid grid-cols-3 gap-8 mt-12 xl:mt-0 xl:col-span-4">

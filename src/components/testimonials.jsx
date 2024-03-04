@@ -26,18 +26,18 @@ export const Testimonials = () => {
     },
   ];
   return (
-    <div className="mt-24 container mx-auto">
-      <div className="my-8 text-left">
-        <h2 className="text-xl font-semibold tracking-tight text-business-secondary">
+    <div className="my-24 container mx-auto">
+      <div className="mt-8 text-left">
+        <h2 className="text-2xl font-semibold tracking-tight text-business-secondary">
           Testimonial
         </h2>
       </div>
-      <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2">
         <div className="">
-          <h2 className="text-business-primary text-4xl font-normal w-full ">
+          <h2 className="text-business-primary text-5xl font-normal w-full my-8">
             Hear what real estate professionals say about my750hrstracker:
           </h2>
-          <div>
+          <div className="text-2xl">
             <p>
               Don't just take our word for it. See what real estate
               professionals like you have to say about their experience with
@@ -45,7 +45,7 @@ export const Testimonials = () => {
               tools and resources they need to succeed. Read their stories and
               discover how 750hrs can help you:
             </p>
-            <ul className="list-disc">
+            <ul className="list-disc list-inside mt-4">
               <li>Effortlessly manage your REPS</li>
               <li>Maximize your tax benefits</li>
               <li>Increase your productivity and efficiency</li>
@@ -54,11 +54,15 @@ export const Testimonials = () => {
           </div>
         </div>
         <div className="">
-          <img src="img/testimonials.svg" alt="testimnoial" />
+          <img
+            src="img/testimonials.svg"
+            className="object-cover"
+            alt="testimnoial"
+          />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-x-16 md:grid-cols-2 my-8">
         {props.data
           ? props.data.map((d, i) => (
               <Testimonial key={`${d.name}-${i}`} data={d} />

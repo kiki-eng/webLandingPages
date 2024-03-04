@@ -39,7 +39,7 @@ export default function Subscription() {
           We've got a plan that's perfect for you
         </h2>
       </div>
-      <div className="container mx-auto mt-24 grid grid-cols-1 md:grid-cols-3 gap-x-8">
+      <div className="container mx-auto mt-24 mb-16 grid grid-cols-1 md:grid-cols-3 gap-x-8">
         {data
           ? data.map((d, i) => (
               <SubscriptionCard key={`${d.plan}-${i}`} data={d} />

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SubscriptionCard(props) {
   return (
-    <div className="relative w-full p-16 bg-white text-black rounded-2xl shadow-sm flex flex-col">
+    <div className="relative w-full p-16 bg-white text-black rounded-3xl shadow-sm flex flex-col">
       <div className="flex-1">
         <div className="text-center">
           <h3 className="text-2xl font-semibold ">{props.data.plan}</h3>
