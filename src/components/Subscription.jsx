@@ -33,9 +33,9 @@ export default function Subscription() {
   ];
   return (
     <section className="py-20 mt-16 bg-business-primary">
-      <div className="container text-white">
+      <div className="container mx-auto text-white">
         <h2 className="text-2xl my-8">Pricing</h2>
-        <h2 className="font-bold leading-4 text-4xl">
+        <h2 className="font-bold text-4xl w-1/4">
           We've got a plan that's perfect for you
         </h2>
       </div>
