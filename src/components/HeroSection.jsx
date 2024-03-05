@@ -83,7 +83,7 @@ export default function Hero() {
               </button>
               <button
                 type="button"
-                className="text-white inline-flex items-center px-16 py-2 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
+                className="text-white text-lg inline-flex items-center px-16 py-2 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
               >
                 Get Started
               </button>

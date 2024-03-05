@@ -19,15 +19,18 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        <ul className="hidden bg-gray-200 px-16 py-4 rounded-[60px] bg-opacity-30 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
-            <a className="text-sm text-gray-400 hover:text-gray-500" href="/">
+            <a
+              className="text-lg text-business-primary font-bold hover:text-gray-500"
+              href="/"
+            >
               Home
             </a>
           </li>
           <li>
             <a
-              className="text-sm text-gray-400 hover:text-gray-500"
+              className="text-lg text-gray-800 hover:text-gray-500"
               href="#pricing"
             >
               Pricing
@@ -36,14 +39,17 @@ export default function Navbar() {
 
           <li>
             <a
-              className="text-sm text-gray-400 hover:text-gray-500"
+              className="text-lg text-gray-800 hover:text-gray-500"
               href="/faqs"
             >
               FAQs
             </a>
           </li>
           <li>
-            <a className="text-sm text-blue-600 font-bold" href="/about">
+            <a
+              className="text-lg text-gray-800 hover:text-gray-500"
+              href="/about"
+            >
               About Us
             </a>
           </li>
@@ -68,7 +74,7 @@ export default function Navbar() {
         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
         <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
           <div className="flex items-center mb-8">
-            <a className="mr-auto text-3xl font-bold leading-none" href="#">
+            <a className="mr-auto text-3xl font-bold leading-none" href="/">
               <svg className="h-12" alt="logo" viewBox="0 0 10240 10240">
                 <path
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +104,7 @@ export default function Navbar() {
               <li className="mb-1">
                 <a
                   className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                  href="#"
+                  href="/"
                 >
                   Home
                 </a>
@@ -106,7 +112,7 @@ export default function Navbar() {
               <li className="mb-1">
                 <a
                   className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                  href="#"
+                  href="/about"
                 >
                   About Us
                 </a>
@@ -114,25 +120,9 @@ export default function Navbar() {
               <li className="mb-1">
                 <a
                   className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                  href="#"
-                >
-                  Services
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                  href="#"
+                  href="#pricing"
                 >
                   Pricing
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                  href="#"
-                >
-                  Contact
                 </a>
               </li>
             </ul>
@@ -141,19 +131,19 @@ export default function Navbar() {
             <div className="pt-6">
               <a
                 className="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
-                href="#"
+                href="/sign-in"
               >
                 Sign in
               </a>
               <a
                 className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
-                href="#"
+                href="/sign-up"
               >
                 Sign Up
               </a>
             </div>
             <p className="my-4 text-xs text-center text-gray-400">
-              <span>Copyright ©</span>
+              <span>Copyright ©{new Date().getFullYear()}</span>
             </p>
           </div>
         </nav>
