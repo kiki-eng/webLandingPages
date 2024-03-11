@@ -132,7 +132,7 @@ export default function Footer() {
           <div className="grid grid-cols-3 gap-8 mt-12 xl:mt-0 xl:col-span-4">
             <div className="md:grid md:grid-cols-3 col-span-2 md:gap-8">
               <div>
-                <h3 className="text-lg font-semibold tracking-wider text-gemspay-dark">
+                <h3 className="text-lg font-semibold tracking-wider ">
                   Product
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -140,7 +140,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <Link
                         to={item.href}
-                        className="text-sm font-normal tracking-normal transition-colors duration-150 text-gemspay-dark hover:text-opacity-70"
+                        className="text-sm font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70"
                       >
                         {item.name}
                       </Link>
@@ -150,7 +150,7 @@ export default function Footer() {
               </div>
 
               <div className="mt-12 md:mt-0">
-                <h3 className="text-lg font-semibold tracking-wider text-gemspay-dark">
+                <h3 className="text-lg font-semibold tracking-wider ">
                   Company
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -160,14 +160,14 @@ export default function Footer() {
                         <a
                           href={item.href}
                           rel="noopener"
-                          className="text-sm font-normal tracking-normal transition-colors duration-150 text-gemspay-dark hover:text-opacity-70"
+                          className="text-sm font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70"
                         >
                           {item.name}
                         </a>
                       ) : (
                         <Link
                           to={item.href}
-                          className="text-sm font-normal tracking-normal transition-colors duration-150 text-gemspay-dark hover:text-opacity-70"
+                          className="text-sm font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70"
                         >
                           {item.name}
                         </Link>
@@ -177,7 +177,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-lg font-semibold tracking-wider text-gemspay-dark">
+                <h3 className="text-lg font-semibold tracking-wider ">
                   Resource
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -187,14 +187,14 @@ export default function Footer() {
                         <a
                           href={item.href}
                           rel="noopener"
-                          className="text-sm font-normal tracking-normal transition-colors duration-150 text-gemspay-dark hover:text-opacity-70"
+                          className="text-sm font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70"
                         >
                           {item.name}
                         </a>
                       ) : (
                         <Link
                           to={item.href}
-                          className="text-sm font-normal tracking-normal transition-colors duration-150 text-gemspay-dark hover:text-opacity-70"
+                          className="text-sm font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70"
                         >
                           {item.name}
                         </Link>
@@ -206,7 +206,7 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-1 md:gap-8">
               <div className="mt-12 md:mt-0">
-                <h3 className="text-lg font-semibold tracking-wider text-gemspay-dark">
+                <h3 className="text-lg font-semibold tracking-wider ">
                   Stay connected
                 </h3>
                 <div className="flex mt-4 space-x-6">
@@ -216,7 +216,7 @@ export default function Footer() {
                       href={item.href}
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="text-gemspay-dark hover:text-opacity-70"
+                      className=" hover:text-opacity-70"
                     >
                       <span className="sr-only">{item.name}</span>
                       <item.icon className="w-6 h-6" aria-hidden="true" />
@@ -234,14 +234,14 @@ export default function Footer() {
                 key={item.name}
                 href={item.href}
                 rel="noopener"
-                className="text-sm font-normal tracking-normal transition-colors duration-150 text-gemspay-dark hover:text-opacity-70"
+                className="text-sm font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70"
               >
                 {item.name}
               </a>
             ))}
           </div> */}
           <div>
-            <p className="text-sm font-normal text-gemspay-dark xl:text-center">
+            <p className="text-sm font-normal  xl:text-center">
               &copy; All Rights Reserved. My750HrsTracker.
             </p>
           </div>
