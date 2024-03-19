@@ -1,20 +1,20 @@
 export default function CallToAction() {
   return (
-    <section className="py-24  mt-16 bg-business-secondary">
+    <section className="py-16 md:py-24 mt-8 md:mt-16 bg-business-secondary">
       <div className="container flex flex-col mx-auto space-y-10 text-center">
         <div className="w-5/6 md:w-7/8 justify-center mx-auto text-white">
-          <h2 className="font-semibold text-4xl md:text-6xl">
+          <h2 className="font-semibold text-3xl md:text-6xl">
             Are you ready to take your real estate business to the next level?
           </h2>
-          <h2 className="font-semibold text-2xl md:text-4xl mt-2 md:mt-4">
+          <h2 className="font-semibold text-xl md:text-4xl mt-3 md:mt-4">
             Join 1,500+ users in minimizing risks, saving time and maximizing
             profits
           </h2>
         </div>
-        <div className="text-white flex mx-auto w-5/6 justify-center">
+        <div className="text-white flex flex-col md:flex-row mx-auto w-2/3 md:w-5/6 justify-center">
           <button
             type="button"
-            className="py-4 pl-6 pr-4 mx-6 text-left rounded-[30px] text-sm border border-business-primary border-2 w-full lg:w-64 focus:ring-business-primary focus:border-business-primary border-opacity-60"
+            className="py-2 md:py-4 px-4 md:px-6 md:mx-6 rounded-[30px] text-sm border border-business-primary border-2 w-full lg:w-64 focus:ring-business-primary focus:border-business-primary border-opacity-60"
           >
             <div className="flex flex-row justify-between w-full text-white text-lg">
               <div
@@ -39,7 +39,7 @@ export default function CallToAction() {
           </button>
           <button
             type="button"
-            className="inline-flex items-center px-16 md:py-20 py-2 md:py-4 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
+            className="inline-block align-middle mt-4 md:mt-0 items-center px-16 md:px-20 py-2 md:py-4 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
           >
             Get Started
           </button>

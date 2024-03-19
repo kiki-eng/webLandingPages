@@ -4,7 +4,6 @@ import About from "./pages/public/About";
 import Home from "./pages/public/Home";
 import ScrollToTop from "./components/ScrollToTop";
 import Faqs from "./pages/public/Faqs";
-
 function App() {
   return (
     <Router>

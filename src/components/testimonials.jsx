@@ -26,18 +26,18 @@ export const Testimonials = () => {
     },
   ];
   return (
-    <div className="my-24 container mx-auto">
-      <div className="mt-8 text-left">
-        <h2 className="text-2xl font-semibold tracking-tight text-business-secondary">
+    <div className="my-16 md:my-24 container mx-auto px-4 md:p-0">
+      <div className="mt-6 md:mt-8 text-left">
+        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-business-secondary">
           Testimonial
         </h2>
       </div>
-      <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div className="">
-          <h2 className="text-business-primary text-5xl font-normal w-full my-8">
+          <h2 className="text-business-primary text-2xl md:text-5xl font-semibold md:font-normal w-full my-4 md:my-8">
             Hear what real estate professionals say about my750hrstracker:
           </h2>
-          <div className="text-2xl">
+          <div className="text-lg md:text-2xl">
             <p>
               Don't just take our word for it. See what real estate
               professionals like you have to say about their experience with

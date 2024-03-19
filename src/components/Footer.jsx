@@ -129,7 +129,7 @@ export default function Footer() {
         <hr className="border border-gray-400 border-1 p-0 m-0" />
 
         <div className="xl:grid xl:grid-cols-4 xl:gap-8">
-          <div className="grid grid-cols-3 gap-8 mt-12 xl:mt-0 xl:col-span-4">
+          <div className="grid grid-cols-2 md-grid-cols-3 gap-4 md:gap-8 mt-12 xl:mt-0 xl:col-span-4">
             <div className="md:grid md:grid-cols-3 col-span-2 md:gap-8">
               <div>
                 <h3 className="text-lg font-semibold tracking-wider ">
