@@ -7,12 +7,12 @@ export default function About() {
   return (
     <Fragment>
       <Header />
-      <section className="lg:relative container mx-auto">
-        <div className="header mt-16">
-          <h2 className="text-5xl font-bold text-business-primary w-full md:w-1/2">
+      <section className="lg:relative container mx-auto px-4 md:p-0">
+        <div className="header mt-8 md:mt-16">
+          <h2 className="text-3xl md:text-5xl font-semibold md:font-bold text-business-primary w-full md:w-1/2">
             Your trusted partner for success in real estate investing
           </h2>
-          <p className="font-normal my-8 text-2xl tracking-wider">
+          <p className="font-normal my-6 md:my-8 text-lg md:text-2xl tracking-wider">
             750hrs was born from a simple yet powerful vision: to empower real
             estate professionals and simplify their journey to financial freedom
             using the tax code. We understand the challenges and complexities of
@@ -22,9 +22,9 @@ export default function About() {
             need to navigate the real estate landscape with confidence.
           </p>
         </div>
-        <div className="mission grid grid-cols-1 grid-cols-2 gap-16 my-16">
-          <div className="mission text-3xl">
-            <h2 className="">Our Mission</h2>
+        <div className="mission grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 my-10 md:my-16">
+          <div className="mission text-xl md:text-3xl">
+            <h2 className="font-semibold md:font-normal">Our Mission</h2>
             <ul className="list-disc list-outside mt-4 ml-6 leading-relaxed">
               <li>
                 Simplify REPS compliance: Eliminate manual processes and ensure
@@ -55,7 +55,7 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="values grid grid-cols-1 grid-cols-2 gap-16 my-24">
+        <div className="values grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 my-16 md:my-24">
           <div className="text-center item-center">
             <img
               src="img/about-values.png"
@@ -63,8 +63,8 @@ export default function About() {
               className="object-cover w-full h-full"
             />
           </div>
-          <div className="text-3xl">
-            <h2 className="">Our Values</h2>
+          <div className="text-xl md:text-3xl">
+            <h2 className="font-semibold md:font-normal">Our Values</h2>
             <ul className="list-disc list-outside mt-4 ml-6 leading-relaxed">
               <li>
                 Innovation: We are constantly innovating and developing new

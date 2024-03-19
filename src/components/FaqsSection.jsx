@@ -38,7 +38,7 @@ export default function FaqsSection() {
   return (
     <Fragment>
       <Header />
-      <section className="w-4/5 mx-auto">
+      <section className="w-full md:w-4/5 mx-auto px-4 md:p-0">
         <div className="hero-img w-full border border-business-primary border-4">
           <img
             src="img/faq-img.png"
@@ -47,8 +47,10 @@ export default function FaqsSection() {
           />
         </div>
         <div className="header w-full my-4">
-          <h2 className="text-4xl font-semibold">Need something cleared up?</h2>
-          <h2 className="text-4xl font-semibold">
+          <h2 className="text-2xl md:text-4xl font-semibold">
+            Need something cleared up?
+          </h2>
+          <h2 className="text-2xl md:text-4xl font-semibold">
             Here are out most frequently asked questions
           </h2>
         </div>

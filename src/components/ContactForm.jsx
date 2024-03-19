@@ -30,13 +30,13 @@ export default function ContactFrom() {
             <div></div>
           ) : (
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="flex flex-col space-y-10 w-full">
+              <div className="flex flex-col space-y-6 md:space-y-10 w-full">
                 <div className="input-group">
-                  <h2 className="font-normal text-xl">First name</h2>
+                  <h2 className="font-normal text-md md:text-xl">First name</h2>
                   <div className="mt-2">
                     <input
                       type="text"
-                      className="py-4 pl-4 rounded-md border border-business-primary border-2 text-md placeholder:text-md placeholder:font-light w-full focus:ring-2 focus:ring-business-secondary focus:border-business-primary"
+                      className="p-2 md:p-4 rounded-md border border-business-primary border-2 text-md placeholder:text-md placeholder:font-light w-full focus:ring-2 focus:ring-business-secondary focus:border-business-primary"
                       placeholder="John"
                       {...register("firstname", {
                         required: true,
@@ -50,11 +50,11 @@ export default function ContactFrom() {
                   </div>
                 </div>
                 <div className="input-group">
-                  <h2 className="font-normal text-xl">Last name</h2>
+                  <h2 className="font-normal text-md md:text-xl">Last name</h2>
                   <div className="mt-2">
                     <input
                       type="text"
-                      className="py-4 pl-4 rounded-md border border-business-primary border-2 text-md placeholder:text-md placeholder:font-light w-full focus:ring-2 focus:ring-business-secondary focus:border-business-primary"
+                      className="p-2 md:p-4 rounded-md border border-business-primary border-2 text-md placeholder:text-md placeholder:font-light w-full focus:ring-2 focus:ring-business-secondary focus:border-business-primary"
                       placeholder="Doe"
                       {...register("lastname", {
                         required: true,
@@ -68,11 +68,11 @@ export default function ContactFrom() {
                   </div>
                 </div>
                 <div className="input-group">
-                  <h2 className="font-normal text-xl">Email</h2>
+                  <h2 className="font-normal text-md md:text-xl">Email</h2>
                   <div className="mt-2">
                     <input
                       type="email"
-                      className="py-4 pl-4 rounded-md border border-business-primary border-2 text-md placeholder:text-md placeholder:font-light w-full focus:ring-2 focus:ring-business-secondary focus:border-business-primary"
+                      className="p-2 md:p-4 rounded-md border border-business-primary border-2 text-md placeholder:text-md placeholder:font-light w-full focus:ring-2 focus:ring-business-secondary focus:border-business-primary"
                       placeholder="johndoe@gmail.com"
                       {...register("email", {
                         required: true,
@@ -90,11 +90,11 @@ export default function ContactFrom() {
                   </div>
                 </div>
                 <div className="input-group">
-                  <h2 className="font-normal text-xl">Message</h2>
+                  <h2 className="font-normal text-md md:text-xl">Message</h2>
                   <div className="mt-2">
                     <textarea
                       rows="5"
-                      className="py-4 pl-4 rounded-md border border-business-primary border-2 text-md placeholder:text-md placeholder:font-light w-full focus:ring-2 focus:ring-business-secondary focus:border-business-primary"
+                      className="p-2 md:p-4 rounded-md border border-business-primary border-2 text-md placeholder:text-md placeholder:font-light w-full focus:ring-2 focus:ring-business-secondary focus:border-business-primary"
                       placeholder="Type message here"
                       {...register("message", {
                         required: true,
@@ -120,7 +120,7 @@ export default function ContactFrom() {
                     />
                     <label
                       htmlFor="terms"
-                      className="align-middle text-lg ml-4"
+                      className="align-middle text-sm md:text-lg ml-4"
                     >
                       I agree to my750hrstracker's{" "}
                       <a
