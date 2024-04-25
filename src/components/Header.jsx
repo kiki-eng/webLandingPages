@@ -85,15 +85,17 @@ export default function Header() {
 
           <div className="text-white text-center items-center justify-end hidden lg:flex lg:flex-1 lg:w-0">
             <a
-              href={process.env.SIGNIN_URL}
-              rel="noopener"
-              className="whitespace-nowrap text-business-primary py-4 px-1 mx-6 rounded-[30px] items-center transition-colors duration-150 font-medium border border-business-primary border-2 w-36 focus:ring-business-primary focus:border-business-primary border-opacity-60"
+              target="_blank"
+              href={process.env.REACT_APP_SIGNIN_URL}
+              rel="noreferrer"
+              className="whitespace-nowrap text-business-primary py-4 px-1 mx-6 rounded-[30px] items-center transition-colors hover:bg-business-primary hover:text-white duration-150 font-medium border border-business-primary border-2 w-36 focus:ring-business-primary focus:border-business-primary border-opacity-60"
             >
               Sign in
             </a>
             <a
-              href={process.env.SIGNUP_URL}
-              rel="noopener"
+              target="_blank"
+              href={process.env.REACT_APP_SIGNUP_URL}
+              rel="noreferrer"
               className="whitespace-nowrap items-center px-1 py-4 w-36 md:py-4 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
             >
               Get Started
