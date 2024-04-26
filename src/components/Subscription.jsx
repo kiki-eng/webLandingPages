@@ -1,36 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SubscriptionCard from "./SubscriptionCard";
+import { getSubscriptions } from "../api/subscriptions";
 
 export default function Subscription() {
-  let data = [
-    {
-      plan: "Free plan",
-      amount: "1 month",
-      features: [
-        "All features made available",
-        "Third party will be able to access or download your files",
-        "You wont be able to upload an evidence file",
-      ],
-    },
-    {
-      plan: "Monthly plan",
-      amount: "$99",
-      features: [
-        "All features made available",
-        "Third party will be able to access or download your files",
-        "You wont be able to upload an evidence file",
-      ],
-    },
-    {
-      plan: "Yearly plan",
-      amount: "$199",
-      features: [
-        "All features made available",
-        "Third party will be able to access or download your files",
-        "You wont be able to upload an evidence file",
-      ],
-    },
-  ];
+  const [subscriptions, setSubscriptions] = useState([]);
+
+  useEffect(() => {
+    getSubscriptions().then((resp) => {
+      let data = resp.data.map((item) => {
+        return {
+          id: item.id,
+          plan: item.name,
+          amount: `$${item.price}`,
+          features: item.features,
+        };
+      });
+
+      setSubscriptions(data);
+    });
+  });
+
   return (
     <section className="px-4 md:px-0 py-12 md:py-20 mt-16 bg-business-primary">
       <div className="container mx-auto text-white">
@@ -40,9 +29,9 @@ export default function Subscription() {
         </h2>
       </div>
       <div className="container mx-auto mt-16 md:mt-24 mb-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {data
-          ? data.map((d, i) => (
-              <SubscriptionCard key={`${d.plan}-${i}`} data={d} />
+        {subscriptions
+          ? subscriptions.map((d, i) => (
+              <SubscriptionCard key={`${d.id}`} data={d} />
             ))
           : "loading"}
       </div>

@@ -37,12 +37,18 @@ export default function CallToAction() {
               </div>
             </div>
           </button>
-          <button
-            type="button"
-            className="inline-block align-middle mt-4 md:mt-0 items-center px-16 md:px-20 py-2 md:py-4 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
+          <a
+            target="_blank"
+            href={process.env.REACT_APP_SIGNUP_URL}
+            rel="noreferrer"
           >
-            Get Started
-          </button>
+            <button
+              type="button"
+              className="inline-block align-middle mt-4 md:mt-0 items-center px-16 md:px-20 py-2 md:py-4 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
+            >
+              Get Started
+            </button>
+          </a>
         </div>
       </div>
     </section>

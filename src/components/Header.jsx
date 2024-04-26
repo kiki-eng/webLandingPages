@@ -84,14 +84,14 @@ export default function Header() {
           </nav>
 
           <div className="text-white text-center items-center justify-end hidden lg:flex lg:flex-1 lg:w-0">
-            <a
+            {/* <a
               target="_blank"
               href={process.env.REACT_APP_SIGNIN_URL}
               rel="noreferrer"
               className="whitespace-nowrap text-business-primary py-4 px-1 mx-6 rounded-[30px] items-center transition-colors hover:bg-business-primary hover:text-white duration-150 font-medium border border-business-primary border-2 w-36 focus:ring-business-primary focus:border-business-primary border-opacity-60"
             >
               Sign in
-            </a>
+            </a> */}
             <a
               target="_blank"
               href={process.env.REACT_APP_SIGNUP_URL}
@@ -153,13 +153,14 @@ export default function Header() {
             <div className="px-5 py-6 space-y-6">
               <div>
                 <a
-                  href="/"
-                  rel="noopener"
+                  target="_blank"
+                  href={process.env.REACT_APP_SIGNUP_URL}
+                  rel="noreferrer"
                   className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white transition-colors duration-150 ease-in-out border border-transparent rounded-md shadow-sm bg-business-primary hover:bg-business-secondary"
                 >
                   Get Started
                 </a>
-                <p className="mt-6 text-base font-medium text-center text-business-primary">
+                {/* <p className="mt-6 text-base font-medium text-center text-business-primary">
                   Existing User?
                   <a
                     href="/"
@@ -168,7 +169,7 @@ export default function Header() {
                   >
                     Sign in
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

@@ -99,12 +99,18 @@ export default function Hero() {
                     </span>
                   </div>
                 </button>
-                <button
-                  type="button"
-                  className="text-white text-sm whitespace-nowrap md:text-lg inline-flex items-center px-4 md:px-16 py-1 md:py-2 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
+                <a
+                  target="_blank"
+                  href={process.env.REACT_APP_SIGNUP_URL}
+                  rel="noreferrer"
                 >
-                  Get Started
-                </button>
+                  <button
+                    type="button"
+                    className="text-white text-sm whitespace-nowrap md:text-lg inline-flex items-center px-4 md:px-16 py-1 md:py-2 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
+                  >
+                    Get Started
+                  </button>
+                </a>
               </div>
               <p className="text-gray-400 mt-5">
                 Join 1,500+ users in minimizing risk, saving time and maximizing
@@ -145,12 +151,18 @@ export default function Hero() {
         </div>
 
         <div className="my-8 md:my-16 w-2/3 md:w-3/5 mx-auto text-center">
-          <button
-            type="button"
-            className="text-white inline-flex items-center px-16 md:px-20 py-3 md:py-4 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
+          <a
+            target="_blank"
+            href={process.env.REACT_APP_SIGNUP_URL}
+            rel="noreferrer"
           >
-            Get Started
-          </button>
+            <button
+              type="button"
+              className="text-white inline-flex items-center px-16 md:px-20 py-3 md:py-4 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
+            >
+              Get Started
+            </button>
+          </a>
         </div>
       </div>
     </section>
