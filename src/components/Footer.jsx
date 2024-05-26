@@ -4,15 +4,15 @@ const navigation = {
   product: [
     { name: "Overview", href: "/" },
     { name: "Features", href: "/about" },
-    { name: "Pricing", href: "/demo" },
+    { name: "Pricing", href: "#pricing" },
   ],
   company: [
-    { name: "About us", href: "/privacy-policy", external: false },
-    { name: "Contact", href: "/dispute-policy", external: false },
+    { name: "About us", href: "/about", external: false },
+    { name: "Contact", href: "/about", external: false },
   ],
   resources: [
-    { name: "Newsletter", href: "/privacy-policy", external: false },
-    { name: "Support", href: "/dispute-policy", external: false },
+    { name: "Newsletter", href: "#newsletter", external: false },
+    { name: "Support", href: "/about#contact-us", external: false },
   ],
   social: [
     {
@@ -103,7 +103,10 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="container px-4 py-12 mx-auto space-y-16 sm:px-6 lg:py-16 lg:px-8">
+      <div
+        id="newsletter"
+        className="container px-4 py-12 mx-auto space-y-16 sm:px-6 lg:py-16 lg:px-8"
+      >
         <div className="justify-between w-full space-y-6 lg:flex lg:space-y-0">
           <div className="w-full">
             <h2 className="font-bold text-lg leading-10">

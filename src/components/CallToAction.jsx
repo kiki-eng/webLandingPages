@@ -11,10 +11,10 @@ export default function CallToAction() {
             profits
           </h2>
         </div>
-        <div className="text-white flex flex-col md:flex-row mx-auto w-2/3 md:w-5/6 justify-center">
+        <div className="text-white flex flex-col md:flex-row mx-auto w-2/3 md:w-5/6 justify-center ">
           <button
             type="button"
-            className="py-2 md:py-4 px-4 md:px-6 md:mx-6 rounded-[30px] text-sm border border-business-primary border-2 w-full lg:w-64 focus:ring-business-primary focus:border-business-primary border-opacity-60"
+            className="hover:bg-business-primary py-2 md:py-4 px-4 md:px-6 md:mx-6 rounded-[30px] text-sm border border-business-primary border-2 w-full lg:w-64 focus:ring-business-primary focus:border-business-primary border-opacity-60"
           >
             <div className="flex flex-row justify-between w-full text-white text-lg">
               <div
@@ -44,7 +44,7 @@ export default function CallToAction() {
           >
             <button
               type="button"
-              className="inline-block align-middle mt-4 md:mt-0 items-center px-16 md:px-20 py-2 md:py-4 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
+              className="inline-block align-middle mt-4 md:mt-0 items-center px-16 md:px-20 py-2 md:py-4 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 hover:border-2 hover:border-business-primary duration-150 ease-in-out rounded-[30px]"
             >
               Get Started
             </button>

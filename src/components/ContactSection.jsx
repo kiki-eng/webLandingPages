@@ -2,7 +2,7 @@ import ContactFrom from "./ContactForm";
 
 export default function ContactSection() {
   return (
-    <section>
+    <section id="contact-us">
       <div className="">
         <h2 className="text-2xl mt-4 md:mt-8 font-semibold text-business-secondary">
           Contact us

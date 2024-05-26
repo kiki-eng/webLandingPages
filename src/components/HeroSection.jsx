@@ -59,9 +59,9 @@ export default function Hero() {
                   type="button"
                   className="whitespace-nowrap text-sm md:text-lg px-4 md:px-16 py-1 md:py-2 mr-3 md:mr-6 text-left rounded-[30px] bg-gray-200 w-1/2 lg:w-64 focus:ring-business-primary focus:border-business-primary border-opacity-60"
                 >
-                  <div className="flex flex-row w-full">
+                  <div className="flex flex-row w-full justify-center">
                     <div
-                      className="grid grid-cols-2 divide-x-4 divide-gray-400 mr-3
+                      className="block sm:grid sm:grid-cols-2 md:block divide-x-4 divide-gray-400 mr-3
             "
                     >
                       <div className="inline-block align-middle pr-2">
