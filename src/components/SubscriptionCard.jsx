@@ -36,7 +36,7 @@ export default function SubscriptionCard(props) {
           ))}
         </ul>
         <div className="text-center mt-12 md:mt-20">
-          <a href="/">
+          <a href={process.env.REACT_APP_SIGNUP_URL}>
             <button
               type="button"
               className="p-3 md:p-4 text-center w-64 mx-auto text-business-primary rounded-[30px] text-sm border border-business-primary border-2 focus:ring-business-primary focus:border-business-primary border-opacity-60"
