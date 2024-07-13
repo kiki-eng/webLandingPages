@@ -17,7 +17,7 @@ const navigation = {
   social: [
     {
       name: "Facebook",
-      href: "https://www.facebook.com/750hrstracker/",
+      href: `${process.env.REACT_APP_FACEBOOK_URL}`,
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -30,7 +30,7 @@ const navigation = {
     },
     {
       name: "Instagram",
-      href: "https://instagram.com/750hrstracker/",
+      href: `${process.env.REACT_APP_INSTAGRAM_URL}`,
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -41,31 +41,31 @@ const navigation = {
         </svg>
       ),
     },
-    {
-      name: "Twitter",
-      href: "https://twitter.com/750hrstracker/",
-      icon: (props) => (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          shapeRendering="geometricPrecision"
-          textRendering="geometricPrecision"
-          imageRendering="optimizeQuality"
-          fillRule="evenodd"
-          clipRule="evenodd"
-          viewBox="0 0 512 462.799"
-          {...props}
-        >
-          <path
-            fillRule="nonzero"
-            d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"
-            fill="currentColor"
-          />
-        </svg>
-      ),
-    },
+    // {
+    //   name: "Twitter",
+    //   href: "https://twitter.com/750hrstracker/",
+    //   icon: (props) => (
+    //     <svg
+    //       xmlns="http://www.w3.org/2000/svg"
+    //       shapeRendering="geometricPrecision"
+    //       textRendering="geometricPrecision"
+    //       imageRendering="optimizeQuality"
+    //       fillRule="evenodd"
+    //       clipRule="evenodd"
+    //       viewBox="0 0 512 462.799"
+    //       {...props}
+    //     >
+    //       <path
+    //         fillRule="nonzero"
+    //         d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"
+    //         fill="currentColor"
+    //       />
+    //     </svg>
+    //   ),
+    // },
     {
       name: "LinkedIn",
-      href: "https://linkedin.com/company/750hrstracker/",
+      href: `${process.env.REACT_APP_LINKEDIN_URL}`,
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -74,7 +74,7 @@ const navigation = {
     },
     {
       name: "YouTube",
-      href: "https://youtube.com/@750hrstracker",
+      href: `${process.env.REACT_APP_YOUTUBE_URL}`,
       icon: (props) => (
         <svg
           fill="currentColor"
