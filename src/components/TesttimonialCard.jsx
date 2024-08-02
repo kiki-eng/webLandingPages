@@ -11,13 +11,13 @@ export const Testimonial = (props) => {
             className="size-12 md:size-16 rounded-full object-cover"
           />
           <div>
-            <p className="text-xl md:text-3xl font-medium text-gray-900">
+            <p className="text-xl md:text-2xl font-medium text-gray-900">
               {props.data.name}
             </p>
           </div>
         </div>
 
-        <p className="mt-2 md:mt-4 text-gray-700 text-lg md:text-3xl">
+        <p className="mt-2 md:mt-4 text-gray-700 text-lg md:text-2xl">
           {props.data.text}
         </p>
       </blockquote>

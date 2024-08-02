@@ -109,7 +109,7 @@ export default function Footer() {
       >
         <div className="justify-between w-full space-y-6 lg:flex lg:space-y-0">
           <div className="w-full">
-            <h2 className="font-bold text-lg leading-10">
+            <h2 className="font-bold text-xl leading-10">
               Join our newsletter
             </h2>
             <h2>We'll send you a nice letter once per week. No spam.</h2>
@@ -135,7 +135,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 md-grid-cols-3 gap-4 md:gap-8 mt-12 xl:mt-0 xl:col-span-4">
             <div className="md:grid md:grid-cols-3 col-span-2 md:gap-8">
               <div>
-                <h3 className="text-lg font-semibold tracking-wider ">
+                <h3 className="text-xl font-semibold tracking-wider ">
                   Product
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -143,7 +143,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <Link
                         to={item.href}
-                        className="text-sm font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70"
+                        className="text-md font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70 hover:font-semibold"
                       >
                         {item.name}
                       </Link>
@@ -153,7 +153,7 @@ export default function Footer() {
               </div>
 
               <div className="mt-12 md:mt-0">
-                <h3 className="text-lg font-semibold tracking-wider ">
+                <h3 className="text-xl font-semibold tracking-wider ">
                   Company
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -163,14 +163,14 @@ export default function Footer() {
                         <a
                           href={item.href}
                           rel="noopener"
-                          className="text-sm font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70"
+                          className="text-md font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70 hover:font-semibold"
                         >
                           {item.name}
                         </a>
                       ) : (
                         <Link
                           to={item.href}
-                          className="text-sm font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70"
+                          className="text-md font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70 hover:font-semibold"
                         >
                           {item.name}
                         </Link>
@@ -180,7 +180,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-lg font-semibold tracking-wider ">
+                <h3 className="text-xl font-semibold tracking-wider ">
                   Resource
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -190,14 +190,14 @@ export default function Footer() {
                         <a
                           href={item.href}
                           rel="noopener"
-                          className="text-sm font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70"
+                          className="text-md font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70 hover:font-semibold"
                         >
                           {item.name}
                         </a>
                       ) : (
                         <Link
                           to={item.href}
-                          className="text-sm font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70"
+                          className="text-md font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70 hover:font-semibold"
                         >
                           {item.name}
                         </Link>
@@ -209,7 +209,7 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-1 md:gap-8">
               <div className="mt-12 md:mt-0">
-                <h3 className="text-lg font-semibold tracking-wider ">
+                <h3 className="text-xl font-semibold tracking-wider ">
                   Stay connected
                 </h3>
                 <div className="flex mt-4 space-x-6">
@@ -219,7 +219,7 @@ export default function Footer() {
                       href={item.href}
                       rel="noopener noreferrer"
                       target="_blank"
-                      className=" hover:text-opacity-70"
+                      className=" hover:text-opacity-70 hover:font-semibold"
                     >
                       <span className="sr-only">{item.name}</span>
                       <item.icon className="w-6 h-6" aria-hidden="true" />

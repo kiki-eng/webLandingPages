@@ -7,10 +7,10 @@ export default function HeroAboutCard(props) {
         <div className="rounded-full p-2 md:p-4 justify-center bg-business-secondary text-white"></div>
       </div>
       <div className="text-content mx-2 w-full md:w-4/5">
-        <h2 className="text-xl md:text-3xl font-medium">
+        <h2 className="text-lg md:text-2xl font-medium">
           {props.data.question}
         </h2>
-        <p className="text-lg md:text-2xl">{props.data.answer}</p>
+        <p className="text-md md:text-xl">{props.data.answer}</p>
       </div>
     </div>
   );

@@ -47,10 +47,10 @@ export default function FaqsSection() {
           />
         </div>
         <div className="header w-full my-4">
-          <h2 className="text-2xl md:text-4xl font-semibold">
+          <h2 className="text-xl md:text-3xl font-semibold">
             Need something cleared up?
           </h2>
-          <h2 className="text-2xl md:text-4xl font-semibold">
+          <h2 className="text-xl md:text-3xl font-semibold">
             Here are out most frequently asked questions
           </h2>
         </div>

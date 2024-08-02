@@ -39,7 +39,7 @@ export default function SubscriptionCard(props) {
           <a href={process.env.REACT_APP_SIGNUP_URL}>
             <button
               type="button"
-              className="p-3 md:p-4 text-center w-64 mx-auto text-business-primary rounded-[30px] text-sm border border-business-primary border-2 focus:ring-business-primary focus:border-business-primary border-opacity-60"
+              className="p-3 md:p-4 text-center hover:bg-business-primary hover:text-white w-64 mx-auto text-business-primary rounded-[30px] text-sm border border-business-primary border-2 focus:ring-business-primary focus:border-business-primary border-opacity-60"
             >
               <span className="font-semibold">Get Started</span>
             </button>

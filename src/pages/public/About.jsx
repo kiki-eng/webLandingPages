@@ -23,8 +23,8 @@ export default function About() {
           </p>
         </div>
         <div className="mission grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 my-10 md:my-16">
-          <div className="mission text-xl md:text-3xl">
-            <h2 className="font-semibold md:font-normal">Our Mission</h2>
+          <div className="mission text-lg md:text-2xl">
+            <h2 className="font-semibold">Our Mission</h2>
             <ul className="list-disc list-outside mt-4 ml-6 leading-relaxed">
               <li>
                 Simplify REPS compliance: Eliminate manual processes and ensure
@@ -63,8 +63,8 @@ export default function About() {
               className="object-cover w-full h-full"
             />
           </div>
-          <div className="text-xl md:text-3xl">
-            <h2 className="font-semibold md:font-normal">Our Values</h2>
+          <div className="text-lg md:text-2xl">
+            <h2 className="font-semibold ">Our Values</h2>
             <ul className="list-disc list-outside mt-4 ml-6 leading-relaxed">
               <li>
                 Innovation: We are constantly innovating and developing new

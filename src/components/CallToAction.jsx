@@ -3,10 +3,10 @@ export default function CallToAction() {
     <section className="py-16 md:py-24 mt-8 md:mt-16 bg-business-secondary">
       <div className="container flex flex-col mx-auto space-y-10 text-center">
         <div className="w-5/6 md:w-7/8 justify-center mx-auto text-white">
-          <h2 className="font-semibold text-3xl md:text-6xl">
+          <h2 className="font-semibold text-2xl md:text-4xl">
             Are you ready to take your real estate business to the next level?
           </h2>
-          <h2 className="font-semibold text-xl md:text-4xl mt-3 md:mt-4">
+          <h2 className="font-semibold text-lg md:text-2xl mt-3 md:mt-4">
             Join 1,500+ users in minimizing risks, saving time and maximizing
             profits
           </h2>
