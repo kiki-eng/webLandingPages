@@ -22,19 +22,21 @@ export default function ContactUs() {
               <span>Email Address:</span>
               <span>
                 <a href="mailto:appsupport@my750hrstracker.com">
-                  appsupport@my750hrstracker.com
+                  {process.env.REACT_APP_CONTACT_EMAIL}
                 </a>
               </span>
             </div>
             <div className="grid grid-cols-[1fr,2fr] space-x-2">
               <span>Phone Number:</span>
               <span>
-                <a href="tel:+14168305630">1-416-830-5630</a>
+                <a href={`tel:${process.env.REACT_APP_CONTACT_PHONE}`}>
+                  {process.env.REACT_APP_CONTACT_PHONE}
+                </a>
               </span>
             </div>
             <div className="grid grid-cols-[1fr,2fr] space-x-2">
               <span>Address: </span>
-              <span>3341 Walnut Boulevard, Suite 304, CA 94513</span>
+              <span>{process.env.REACT_APP_CONTACT_ADDRESS}</span>
             </div>
           </div>
         </div>
