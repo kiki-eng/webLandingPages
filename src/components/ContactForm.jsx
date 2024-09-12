@@ -1,18 +1,38 @@
 import { Transition } from "@headlessui/react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { sendSupportMessage } from "../api/support";
 
 export default function ContactFrom() {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
   } = useForm();
 
   const [submissionSuccess, setSubmissionSuccess] = useState(false);
-  const [submissionResponse, setSubmissionResponse] = useState(null);
-  const onSubmit = (values) => {};
+  const [submissionResponse, setSubmissionResponse] = useState("");
+
+  const formRef = useRef(null);
+  const onSubmit = (values) => {
+    sendSupportMessage(values).then((data) => {
+      setSubmissionResponse(data.message);
+      setSubmissionSuccess(true);
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+      setTimeout(() => {
+        setSubmissionSuccess(false);
+      }, 3000);
+    });
+  };
+
+  useEffect(() => {
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+  }, [formRef]);
+
   return (
     <section className="lg:pt-6">
       <div className="">
@@ -27,9 +47,9 @@ export default function ContactFrom() {
           leaveTo="opacity-0"
         >
           {submissionSuccess ? (
-            <div></div>
+            <div>{submissionResponse}. You will contacted shortly.</div>
           ) : (
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)} ref={formRef}>
               <div className="flex flex-col space-y-6 md:space-y-10 w-full">
                 <div className="input-group">
                   <h2 className="font-normal text-md md:text-xl">First name</h2>

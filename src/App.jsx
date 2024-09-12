@@ -4,6 +4,7 @@ import About from "./pages/public/About";
 import Home from "./pages/public/Home";
 import ScrollToTop from "./components/ScrollToTop";
 import Faqs from "./pages/public/Faqs";
+import ContactUs from "./pages/public/ContactUs";
 function App() {
   return (
     <Router>
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/faqs" element={<Faqs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Route>
       </Routes>
     </Router>

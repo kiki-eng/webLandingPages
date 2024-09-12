@@ -90,7 +90,7 @@ export default function About() {
           </div>
         </div>
 
-        <ContactSection />
+        {/* <ContactSection /> */}
       </section>
       <Footer />
     </Fragment>

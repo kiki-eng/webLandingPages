@@ -81,6 +81,16 @@ export default function Header() {
             >
               FAQs
             </Link>
+            <Link
+              to="/contact-us"
+              className={
+                location.pathname === "/contact-us"
+                  ? "text-lg transition-colors duration-150 font-bold text-business-primary hover:text-gray-500"
+                  : "text-base font-medium transition-colors duration-150 text-gray-800 hover:text-gray-500"
+              }
+            >
+              Contact Us
+            </Link>
           </nav>
 
           <div className="text-white text-center items-center justify-end hidden lg:flex lg:flex-1 lg:w-0">

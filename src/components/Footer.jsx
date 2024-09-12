@@ -8,11 +8,11 @@ const navigation = {
   ],
   company: [
     { name: "About us", href: "/about", external: false },
-    { name: "Contact", href: "/about", external: false },
+    { name: "Contact", href: "/contact-us", external: false },
   ],
   resources: [
     { name: "Newsletter", href: "#newsletter", external: false },
-    { name: "Support", href: "/about#contact-us", external: false },
+    { name: "Support", href: "/contact-us", external: false },
   ],
   social: [
     {
