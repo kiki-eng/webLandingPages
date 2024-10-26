@@ -9,6 +9,17 @@ const navigation = {
   company: [
     { name: "About us", href: "/about", external: false },
     { name: "Contact", href: "/contact-us", external: false },
+    { name: "Privacy Policy", href: "/privacy-policy", external: false },
+    {
+      name: "Terms & Conditions",
+      href: "/terms-and-conditions",
+      external: false,
+    },
+    {
+      name: "End User License Agreement (EULA)",
+      href: "/eula",
+      external: false,
+    },
   ],
   resources: [
     { name: "Newsletter", href: "#newsletter", external: false },
