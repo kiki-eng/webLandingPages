@@ -51,18 +51,18 @@ export default function Hero() {
         <div className="container w-full pt-16 mx-auto text-center lg:pb-48 lg:py-64 lg:text-left">
           <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 className="font-semibold leading-snug text-gemspay-dark ">
-              <span className="block leading-snug text-5xl md:text-5xl xl:text-6xl md:leading-snug lg:leading-snug xl:leading-snug font-bold">
+              <span className="block leading-snug text-4xl md:text-5xl xl:text-6xl md:leading-snug lg:leading-snug xl:leading-snug font-bold">
                 Tracking Real Estate Hours Made Easy
               </span>{" "}
-              <span className="block text-5xl leading-snug md:text-5xl xl:text-6xl md:leading-snug lg:leading-snug xl:leading-snug text-business-secondary font-bold">
+              <span className="block text-4xl leading-snug md:text-5xl xl:text-6xl md:leading-snug lg:leading-snug xl:leading-snug text-business-secondary font-bold">
                 Get Peace of Mind
               </span>
             </h1>
-            <p className="max-w-md mt-3 text-xl md:mt-5 md:max-w-lg font-normal leading-8 mx-auto lg:mx-0">
+            <p className="max-w-md mt-3 text-lg md:text-xl md:mt-5 md:max-w-lg font-normal leading-8 mx-auto lg:mx-0">
               Struggling with your REPS? my750hrstracker <br /> is here to
               elevate your real estate game.
             </p>
-            <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
+            <div className="mb-16 sm:mb-0 mt-10 sm:flex sm:justify-center lg:justify-start">
               <div className="w-2/3 sm:w-1/2 md:w-auto mx-auto lg:mx-0 flex items-center justify-center gap-4">
                 <div className="w-60 hover:scale-105 transform transition duration-200">
                   <a href="/">
@@ -79,7 +79,7 @@ export default function Hero() {
           </div>
         </div>
         <div
-          className="relative w-full pb-40 overflow-hidden bg-center bg-cover bg-no-repeat h-96 lg:block md:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-2/3 lg:h-full pointer-events-none"
+          className="relative w-full hidden md:block pb-40 overflow-hidden bg-center bg-cover bg-no-repeat h-96 lg:block md:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-2/3 lg:h-full pointer-events-none"
           style={{
             backgroundImage: "url(/img/hero-bg.png)",
             // backgroundPosition: "bottom",
@@ -104,20 +104,20 @@ export default function Hero() {
         </div>
       </section>
       <section className="bg-[#F3F3F3] relative">
-        <div className="container mx-auto py-28">
+        <div className="container mx-auto py-20 md:py-28 px-4">
           <div className="w-full flex flex-col md:flex-row gap-4">
             <div className="w-full md:w-2/3">
-              <h2 className="w-full md:leading-2 font-medium md:font-bold text-3xl md:text-4xl text-business-primary">
+              <h2 className="w-full md:leading-2 font-bold text-3xl md:text-4xl text-business-primary">
                 Why choose my750hrstracker?
               </h2>
-              <p className="mt-4 w-full text-xl md:text-2xl md:max-w-3xl lg:max-w-4xl">
+              <p className="mt-4 w-full text-lg md:text-2xl md:max-w-3xl lg:max-w-4xl text-justify md:text-left">
                 Qualifying as a real estate professional can be complex,
                 especially given the high audit scrutiny. That's why we created
                 my750hrstracker—designed by CPAs who understand the challenges
                 and the stakes. Our platform makes it easy to track and document
                 your hours, giving you the peace of mind.
               </p>
-              <div className="my-16 md:my-16 w-2/3 md:w-2/5 text-left">
+              <div className="my-8 md:my-16 w-2/3 md:w-2/5 mx-auto md:mx-0 md:text-left">
                 <a
                   target="_blank"
                   href={process.env.REACT_APP_SIGNUP_URL}
@@ -156,13 +156,13 @@ export default function Hero() {
         </div>
       </section> */}
       <section className="bg-[#CD932A14]">
-        <div className="container mx-auto px-4 md:py-16">
+        <div className="container mx-auto px-4 py-8 md:py-16">
           <div className="">
             <h2 className="w-full text-center font-bold text-2xl md:text-4xl text-business-primary">
               Benefits of <span className="lowercase">my750hrstracker</span>
             </h2>
           </div>
-          <div className="container grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-x-8 md:gap-y-6 mt-16 mx-auto">
+          <div className="container grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-x-8 md:gap-y-6 mt-8 md:mt-16 mx-auto">
             {data.map((d, i) => (
               <HeroAboutCard key={`icon-${i}`} data={d} />
             ))}

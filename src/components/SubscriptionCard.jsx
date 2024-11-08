@@ -26,9 +26,9 @@ export default function SubscriptionCard(props) {
             props.data.isGray
               ? "bg-[#F5F3F5] text-dark"
               : "bg-[#7CA4DE] text-white"
-          } w-full py-8 px-16 rounded-b-xl relative h-full flex flex-col`}
+          } w-full py-8 px-8 md:px-16 rounded-b-xl relative h-full flex flex-col`}
         >
-          <ul className="mt-4 md:mt-6 space-y-4 md:space-y-6">
+          <ul className="mt-4 md:mt-6 space-y-4 md:space-y-6 mb-4">
             {props.data.features.slice(0, 2).map((feat, index) => (
               <li className="flex" key={index}>
                 <img

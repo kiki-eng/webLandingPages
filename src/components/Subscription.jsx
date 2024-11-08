@@ -35,7 +35,7 @@ export default function Subscription() {
             We've got a plan that's perfect for you
           </h4>
         </div>
-        <div className="container mx-auto w-full md:w-4/5 mt-16 mb-16 flex flex-row gap-8">
+        <div className="container mx-auto w-full md:w-4/5 mt-16 mb-16 flex flex-col md:flex-row gap-8">
           {subscriptions
             ? subscriptions.map((d, i) => (
                 <SubscriptionCard key={`${d.id}`} data={d} />
@@ -43,7 +43,7 @@ export default function Subscription() {
             : "loading"}
         </div>
         <div className="w-full md:w-4/5 text-center mx-auto">
-          <h2 className="text-xl md:text-2xl my-6">
+          <h2 className="text-lg md:text-2xl my-6">
             Your account will be billed at the time of purchase confirmation.
             Subscriptions renew automatically unless you disable auto-renewal at
             least 24 hours before the current subscription period ends. Renewal

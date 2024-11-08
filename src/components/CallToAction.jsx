@@ -14,7 +14,7 @@ export default function CallToAction() {
         <div className="text-white flex flex-col md:flex-row mx-auto w-2/3 md:w-3/5 justify-center space-y-4 md:space-y-0 md:space-x-6">
           <button
             type="button"
-            className="flex justify-center items-center w-56 md:w-64 hover:bg-business-primary py-2 md:py-4 rounded-[30px] border border-business-primary border-2 focus:ring-business-primary focus:border-business-primary border-opacity-60"
+            className="mx-auto md:mx-0 flex justify-center items-center w-56 md:w-64 hover:bg-business-primary py-2 md:py-4 rounded-[30px] border border-business-primary border-2 focus:ring-business-primary focus:border-business-primary border-opacity-60"
           >
             <div className="flex flex-row justify-center w-full text-white">
               <div className="grid grid-cols-2 divide-x-4 divide-white mr-3">
@@ -42,7 +42,7 @@ export default function CallToAction() {
             target="_blank"
             href={process.env.REACT_APP_SIGNUP_URL}
             rel="noreferrer"
-            className="w-56 md:w-64"
+            className="w-56 md:w-64 mx-auto md:mx-0"
           >
             <button
               type="button"
