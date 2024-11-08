@@ -7,12 +7,12 @@ export const Testimonials = () => {
     {
       img: "img/testimonials/01.jpg",
       text: "my750hrstracker has been a game-changer for me! I used to spend hours struggling with spreadsheets and paperwork, but now I can effortlessly track my hours and activities.",
-      name: "Smith Parvey",
+      name: "Jane Smith",
     },
     {
       img: "img/testimonials/02.jpg",
       text: "Since using my750hrstracker, our team has become much more efficient and productive. The centralized management and collaboration tools have made it easier than ever to track our progress and make informed decisions.",
-      name: "Johnathan Doe",
+      name: "John Doe",
     },
     {
       img: "img/testimonials/03.jpg",
@@ -26,49 +26,51 @@ export const Testimonials = () => {
     },
   ];
   return (
-    <div className="my-16 md:my-24 container mx-auto px-4 md:p-0">
-      <div className="mt-6 md:mt-8 text-left">
-        <h2 className="text-2xl md:text-2xl font-semibold tracking-tight text-business-secondary">
-          Testimonial
-        </h2>
-      </div>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <div className="">
-          <h2 className="text-business-primary text-2xl md:text-4xl font-semibold md:font-normal w-full my-4 md:my-8">
-            Hear what real estate professionals say about my750hrstracker:
+    <section className="bg-[#F3F3F3] py-20 ">
+      <div className="my-16 md:my-24 container mx-auto px-4 md:p-0">
+        <div className="mt-6 md:mt-8 text-left">
+          <h2 className="text-2xl md:text-2xl font-semibold tracking-tight text-business-secondary">
+            Testimonial
           </h2>
-          <div className="text-lg md:text-2xl">
-            <p>
-              Don't just take our word for it. See what real estate
-              professionals like you have to say about their experience with
-              my750hrstracker. We're committed to providing our users with the
-              tools and resources they need to succeed. Read their stories and
-              discover how 750hrs can help you:
-            </p>
-            <ul className="list-disc list-inside mt-4">
-              <li>Effortlessly manage your REPS</li>
-              <li>Maximize your tax benefits</li>
-              <li>Increase your productivity and efficiency</li>
-              <li>Achieve your real estate goals</li>
-            </ul>
+        </div>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="">
+            <h2 className="text-business-primary text-2xl md:text-4xl font-semibold md:font-normal w-full my-4 md:my-8">
+              Hear what real estate professionals say about my750hrstracker:
+            </h2>
+            <div className="text-lg md:text-2xl">
+              <p>
+                Don't just take our word for it. See what real estate
+                professionals like you have to say about their experience with
+                my750hrstracker. We're committed to providing our users with the
+                tools and resources they need to succeed. Read their stories and
+                discover how 750hrs can help you
+              </p>
+              {/* <ul className="list-disc list-inside mt-4">
+                <li>Effortlessly manage your REPS</li>
+                <li>Maximize your tax benefits</li>
+                <li>Increase your productivity and efficiency</li>
+                <li>Achieve your real estate goals</li>
+              </ul> */}
+            </div>
+          </div>
+          <div className="">
+            <img
+              src="img/testimonials.svg"
+              className="object-cover"
+              alt="testimnoial"
+            />
           </div>
         </div>
-        <div className="">
-          <img
-            src="img/testimonials.svg"
-            className="object-cover"
-            alt="testimnoial"
-          />
+
+        <div className="grid grid-cols-1 gap-x-16 md:grid-cols-2 my-8">
+          {props.data
+            ? props.data.map((d, i) => (
+                <Testimonial key={`${d.name}-${i}`} data={d} />
+              ))
+            : "loading"}
         </div>
       </div>
-
-      <div className="grid grid-cols-1 gap-x-16 md:grid-cols-2 my-8">
-        {props.data
-          ? props.data.map((d, i) => (
-              <Testimonial key={`${d.name}-${i}`} data={d} />
-            ))
-          : "loading"}
-      </div>
-    </div>
+    </section>
   );
 };

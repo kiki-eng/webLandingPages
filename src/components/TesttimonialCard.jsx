@@ -2,7 +2,7 @@ import React from "react";
 
 export const Testimonial = (props) => {
   return (
-    <div className="mt-6 md:mt-8">
+    <div className="mt-6 md:mt-8 m-4">
       <blockquote className="rounded-0">
         <div className="flex items-center gap-4">
           <img

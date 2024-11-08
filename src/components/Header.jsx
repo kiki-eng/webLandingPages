@@ -61,14 +61,24 @@ export default function Header() {
               Home
             </Link>
             <Link
-              to="/about"
+              to="/#features"
               className={
-                location.pathname === "/about"
+                location.pathname === "/#features"
                   ? "text-lg transition-colors duration-150 font-bold text-business-primary hover:text-gray-500"
                   : "text-base font-medium transition-colors duration-150 text-gray-800 hover:text-gray-500"
               }
             >
-              About us
+              Features
+            </Link>
+            <Link
+              to="/#pricing"
+              className={
+                location.pathname === "/#pricing"
+                  ? "text-lg transition-colors duration-150 font-bold text-business-primary hover:text-gray-500"
+                  : "text-base font-medium transition-colors duration-150 text-gray-800 hover:text-gray-500"
+              }
+            >
+              Pricing
             </Link>
 
             <Link
@@ -79,9 +89,19 @@ export default function Header() {
                   : "text-base font-medium transition-colors duration-150 text-gray-800 hover:text-gray-500"
               }
             >
-              FAQs
+              FAQ
             </Link>
             <Link
+              to="/about"
+              className={
+                location.pathname === "/about"
+                  ? "text-lg transition-colors duration-150 font-bold text-business-primary hover:text-gray-500"
+                  : "text-base font-medium transition-colors duration-150 text-gray-800 hover:text-gray-500"
+              }
+            >
+              About us
+            </Link>
+            {/* <Link
               to="/contact-us"
               className={
                 location.pathname === "/contact-us"
@@ -90,23 +110,23 @@ export default function Header() {
               }
             >
               Contact Us
-            </Link>
+            </Link> */}
           </nav>
 
           <div className="text-white text-center items-center justify-end hidden lg:flex lg:flex-1 lg:w-0">
-            {/* <a
+            <a
               target="_blank"
               href={process.env.REACT_APP_SIGNIN_URL}
               rel="noreferrer"
-              className="whitespace-nowrap text-business-primary py-4 px-1 mx-6 rounded-[30px] items-center transition-colors hover:bg-business-primary hover:text-white duration-150 font-medium border border-business-primary border-2 w-36 focus:ring-business-primary focus:border-business-primary border-opacity-60"
+              className="whitespace-nowrap text-business-primary py-2 px-1 mx-6 rounded-[30px] items-center transition-colors hover:bg-business-primary hover:text-white duration-150 font-medium border border-business-primary border-2 w-36 focus:ring-business-primary focus:border-business-primary border-opacity-60"
             >
               Sign in
-            </a> */}
+            </a>
             <a
               target="_blank"
               href={process.env.REACT_APP_SIGNUP_URL}
               rel="noreferrer"
-              className="whitespace-nowrap items-center px-1 py-4 w-36 md:py-4 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
+              className="whitespace-nowrap items-center px-1 py-2 w-36 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 duration-150 ease-in-out rounded-[30px]"
             >
               Get Started
             </a>
@@ -170,7 +190,7 @@ export default function Header() {
                 >
                   Get Started
                 </a>
-                {/* <p className="mt-6 text-base font-medium text-center text-business-primary">
+                <p className="mt-6 text-base font-medium text-center text-business-primary">
                   Existing User?
                   <a
                     href="/"
@@ -179,7 +199,7 @@ export default function Header() {
                   >
                     Sign in
                   </a>
-                </p> */}
+                </p>
               </div>
             </div>
           </div>

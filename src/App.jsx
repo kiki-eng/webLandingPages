@@ -8,6 +8,7 @@ import ContactUs from "./pages/public/ContactUs";
 import PrivacyPolicy from "./pages/public/PrivacyPolicy";
 import Terms from "./pages/public/Terms";
 import Eula from "./pages/public/Eula";
+import HomeTwo from "./pages/public/HomeTwo";
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/new" element={<HomeTwo />} />
           <Route path="/about" element={<About />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/contact-us" element={<ContactUs />} />

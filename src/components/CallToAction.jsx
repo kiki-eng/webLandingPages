@@ -1,6 +1,6 @@
 export default function CallToAction() {
   return (
-    <section className="py-16 md:py-24 mt-8 md:mt-16 bg-business-secondary">
+    <section className="py-16 md:py-24 bg-business-secondary">
       <div className="container flex flex-col mx-auto space-y-10 text-center">
         <div className="w-5/6 md:w-7/8 justify-center mx-auto text-white">
           <h2 className="font-semibold text-2xl md:text-4xl">
@@ -11,22 +11,23 @@ export default function CallToAction() {
             profits
           </h2>
         </div>
-        <div className="text-white flex flex-col md:flex-row mx-auto w-2/3 md:w-5/6 justify-center ">
+        <div className="text-white flex flex-col md:flex-row mx-auto w-2/3 md:w-3/5 justify-center space-y-4 md:space-y-0 md:space-x-6">
           <button
             type="button"
-            className="hover:bg-business-primary py-2 md:py-4 px-4 md:px-6 md:mx-6 rounded-[30px] text-sm border border-business-primary border-2 w-full lg:w-64 focus:ring-business-primary focus:border-business-primary border-opacity-60"
+            className="flex justify-center items-center w-56 md:w-64 hover:bg-business-primary py-2 md:py-4 rounded-[30px] border border-business-primary border-2 focus:ring-business-primary focus:border-business-primary border-opacity-60"
           >
-            <div className="flex flex-row justify-between w-full text-white text-lg">
-              <div
-                className="grid grid-cols-2 divide-x-4 divide-white mr-3
-            "
-              >
-                <div className="flex text-right inline-block align-middle">
-                  <img src="/img/icons/apple_icon.svg" alt="apple-store-logo" />
-                </div>
-                <div className="flex text-right inline-block align-middle">
+            <div className="flex flex-row justify-center w-full text-white">
+              <div className="grid grid-cols-2 divide-x-4 divide-white mr-3">
+                <div className="flex text-right">
                   <img
-                    className="ml-1.5"
+                    src="/img/icons/apple_icon.svg"
+                    className="size-6"
+                    alt="apple-store-logo"
+                  />
+                </div>
+                <div className="flex text-right">
+                  <img
+                    className="ml-1.5 size-6"
                     src="/img/icons/playstore_icon.svg"
                     alt="play-store-logo"
                   />
@@ -41,12 +42,13 @@ export default function CallToAction() {
             target="_blank"
             href={process.env.REACT_APP_SIGNUP_URL}
             rel="noreferrer"
+            className="w-56 md:w-64"
           >
             <button
               type="button"
-              className="inline-block align-middle mt-4 md:mt-0 items-center px-16 md:px-20 py-2 md:py-4 font-medium bg-business-primary hover:bg-business-secondary transition-colors border border-0 hover:border-2 hover:border-business-primary duration-150 ease-in-out rounded-[30px]"
+              className="flex justify-center items-center w-full py-2 md:py-4 bg-business-primary hover:bg-business-secondary transition-colors border border-0 hover:border-2 hover:border-business-primary duration-150 ease-in-out rounded-[30px]"
             >
-              Get Started
+              <span className="font-semibold">Get Started</span>
             </button>
           </a>
         </div>
