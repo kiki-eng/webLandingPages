@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const navigation = {
   product: [
-    { name: "Overview", href: "/" },
-    { name: "Features", href: "#features" },
-    { name: "Pricing", href: "#pricing" },
+    { name: "Overview", href: "/", isScrollLink: false },
+    { name: "Features", href: "features", isScrollLink: true },
+    { name: "Pricing", href: "pricing", isScrollLink: true },
   ],
   company: [
     { name: "About us", href: "/about", external: false },
@@ -149,12 +150,23 @@ export default function Footer() {
                 <ul className="mt-4 space-y-4">
                   {navigation.product.map((item) => (
                     <li key={item.name}>
-                      <Link
-                        to={item.href}
-                        className="text-md font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70 hover:font-semibold"
-                      >
-                        {item.name}
-                      </Link>
+                      {item.isScrollLink ? (
+                        <ScrollLink
+                          to={item.href}
+                          smooth={true}
+                          duration={500}
+                          className="text-md font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70 hover:font-semibold"
+                        >
+                          {item.name}
+                        </ScrollLink>
+                      ) : (
+                        <Link
+                          to={item.href}
+                          className="text-md font-normal tracking-normal transition-colors duration-150  hover:text-opacity-70 hover:font-semibold"
+                        >
+                          {item.name}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>

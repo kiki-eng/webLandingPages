@@ -10,6 +10,7 @@ import {
 
 import Logo from "./Logo";
 import { Link, useLocation } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Header() {
   const location = useLocation();
@@ -36,8 +37,8 @@ export default function Header() {
 
   return (
     <Popover className="container relative z-50 mx-auto">
-      <div className="px-4 sm:px-6">
-        <div className="flex items-center justify-between py-6 lg:justify-start lg:space-x-10">
+      <div className="px-4 sm:px-6 ">
+        <div className="flex items-center justify-between py-6 lg:justify-start lg:space-x-10 ">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link to="/">
               <Logo />
@@ -60,8 +61,10 @@ export default function Header() {
             >
               Home
             </Link>
-            <Link
-              to="#features"
+            <ScrollLink
+              to="features"
+              smooth={true}
+              duration={500}
               className={
                 location.pathname === "/#features"
                   ? "text-lg transition-colors duration-150 font-bold text-business-primary hover:text-gray-500"
@@ -69,9 +72,11 @@ export default function Header() {
               }
             >
               Features
-            </Link>
-            <Link
-              to="#pricing"
+            </ScrollLink>
+            <ScrollLink
+              to="pricing"
+              smooth={true}
+              duration={500}
               className={
                 location.pathname === "/#pricing"
                   ? "text-lg transition-colors duration-150 font-bold text-business-primary hover:text-gray-500"
@@ -79,7 +84,7 @@ export default function Header() {
               }
             >
               Pricing
-            </Link>
+            </ScrollLink>
 
             <Link
               to="/faqs"
