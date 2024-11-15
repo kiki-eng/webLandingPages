@@ -155,7 +155,7 @@ export default function Hero() {
           </svg>
         </div>
       </section> */}
-      <section className="bg-[#CD932A14]">
+      <section className="bg-[#CD932A14]" id="features">
         <div className="container mx-auto px-4 py-8 md:py-16">
           <div className="">
             <h2 className="w-full text-center font-bold text-2xl md:text-4xl text-business-primary">

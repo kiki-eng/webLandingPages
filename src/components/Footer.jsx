@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const navigation = {
   product: [
     { name: "Overview", href: "/" },
-    { name: "Features", href: "/about" },
+    { name: "Features", href: "#features" },
     { name: "Pricing", href: "#pricing" },
   ],
   company: [
@@ -21,10 +21,7 @@ const navigation = {
       external: false,
     },
   ],
-  resources: [
-    { name: "Newsletter", href: "#newsletter", external: false },
-    { name: "Support", href: "/contact-us", external: false },
-  ],
+  resources: [{ name: "Support", href: "/contact-us", external: false }],
   social: [
     {
       name: "Facebook",

@@ -61,7 +61,7 @@ export default function Header() {
               Home
             </Link>
             <Link
-              to="/#features"
+              to="#features"
               className={
                 location.pathname === "/#features"
                   ? "text-lg transition-colors duration-150 font-bold text-business-primary hover:text-gray-500"
@@ -71,7 +71,7 @@ export default function Header() {
               Features
             </Link>
             <Link
-              to="/#pricing"
+              to="#pricing"
               className={
                 location.pathname === "/#pricing"
                   ? "text-lg transition-colors duration-150 font-bold text-business-primary hover:text-gray-500"
