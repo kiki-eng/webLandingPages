@@ -183,13 +183,32 @@ export default function PrivacyPolicy() {
             payment information. Please refer to the following for privacy
             policies of these services:
           </p>
-          <p>
-            Apple In-App Payments Privacy Policy:
-            https://www.apple.com/legal/privacy/en-ww/
+          <p className="text-xl mb-2">
+            <span className="font-semibold mr-1">
+              Apple App Store Services:
+            </span>
+
+            <a
+              href="https://www.apple.com/legal/privacy/en-ww/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold underline text-business-primary"
+            >
+              Apple Privacy Policy
+            </a>
           </p>
-          <p>
-            Google Play In-App Payments Privacy Policy:
-            https://www.google.com/policies/privacy/
+          <p className="text-xl mb-2">
+            <span className="font-semibold mr-1">
+              Google Play Store Services:
+            </span>
+            <a
+              href="https://www.google.com/policies/privacy/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold underline text-business-primary"
+            >
+              Google Privacy Policy
+            </a>
           </p>
         </div>
         <div className="mb-4">
