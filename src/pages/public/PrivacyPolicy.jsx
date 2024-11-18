@@ -111,12 +111,31 @@ export default function PrivacyPolicy() {
             services we may employ:
           </p>
           <p className="text-xl mb-2">
-            <span className="font-semibold">Apple App Store Services:</span>
-            Apple Privacy Policy: https://www.apple.com/legal/privacy/en-ww/
+            <span className="font-semibold mr-1">
+              Apple App Store Services:
+            </span>
+
+            <a
+              href="https://www.apple.com/legal/privacy/en-ww/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold underline text-business-primary"
+            >
+              Apple Privacy Policy
+            </a>
           </p>
           <p className="text-xl mb-2">
-            <span className="font-semibold">Google Play Store Services:</span>
-            Google Privacy Policy: https://www.google.com/policies/privacy/
+            <span className="font-semibold mr-1">
+              Google Play Store Services:
+            </span>
+            <a
+              href="https://www.google.com/policies/privacy/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold underline text-business-primary"
+            >
+              Google Privacy Policy
+            </a>
           </p>
         </div>
         <div className="mb-4">
