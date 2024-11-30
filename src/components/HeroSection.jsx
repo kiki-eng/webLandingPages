@@ -65,12 +65,15 @@ export default function Hero() {
             <div className="mb-16 sm:mb-0 mt-10 sm:flex sm:justify-center lg:justify-start">
               <div className="w-2/3 sm:w-1/2 md:w-auto mx-auto lg:mx-0 flex items-center justify-center gap-4">
                 <div className="w-60 hover:scale-105 transform transition duration-200">
-                  <a href="/">
+                  <a href={process.env.REACT_APP_ANDROID_DOWNLOAD_URL}>
                     <img src="/img/googleplay.png" alt="googleplay-download" />
                   </a>
                 </div>
                 <div className="w-60 hover:scale-105 transform transition duration-200">
-                  <a href="/" className="">
+                  <a
+                    href={process.env.REACT_APP_APPLE_DOWNLOAD_URL}
+                    className=""
+                  >
                     <img src="/img/appstore.png" alt="appstore-download" />
                   </a>
                 </div>

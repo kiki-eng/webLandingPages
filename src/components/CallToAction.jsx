@@ -12,32 +12,34 @@ export default function CallToAction() {
           </h2>
         </div>
         <div className="text-white flex flex-col md:flex-row mx-auto w-2/3 md:w-3/5 justify-center space-y-4 md:space-y-0 md:space-x-6">
-          <button
-            type="button"
-            className="mx-auto md:mx-0 flex justify-center items-center w-56 md:w-64 hover:bg-business-primary py-2 md:py-4 rounded-[30px] border border-business-primary border-2 focus:ring-business-primary focus:border-business-primary border-opacity-60"
-          >
-            <div className="flex flex-row justify-center w-full text-white">
-              <div className="grid grid-cols-2 divide-x-4 divide-white mr-3">
-                <div className="flex text-right">
-                  <img
-                    src="/img/icons/apple_icon.svg"
-                    className="size-6"
-                    alt="apple-store-logo"
-                  />
+          <a href={process.env.REACT_APP_APPLE_DOWNLOAD_URL} className="">
+            <button
+              type="button"
+              className="mx-auto md:mx-0 flex justify-center items-center w-56 md:w-64 hover:bg-business-primary py-2 md:py-4 rounded-[30px] border border-business-primary border-2 focus:ring-business-primary focus:border-business-primary border-opacity-60"
+            >
+              <div className="flex flex-row justify-center w-full text-white">
+                <div className="grid grid-cols-2 divide-x-4 divide-white mr-3">
+                  <div className="flex text-right">
+                    <img
+                      src="/img/icons/apple_icon.svg"
+                      className="size-6"
+                      alt="apple-store-logo"
+                    />
+                  </div>
+                  <div className="flex text-right">
+                    <img
+                      className="ml-1.5 size-6"
+                      src="/img/icons/playstore_icon.svg"
+                      alt="play-store-logo"
+                    />
+                  </div>
                 </div>
-                <div className="flex text-right">
-                  <img
-                    className="ml-1.5 size-6"
-                    src="/img/icons/playstore_icon.svg"
-                    alt="play-store-logo"
-                  />
+                <div className="">
+                  <span className="font-semibold">Download app</span>
                 </div>
               </div>
-              <div className="">
-                <span className="font-semibold">Download app</span>
-              </div>
-            </div>
-          </button>
+            </button>
+          </a>
           <a
             target="_blank"
             href={process.env.REACT_APP_SIGNUP_URL}

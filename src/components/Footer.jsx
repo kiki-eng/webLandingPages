@@ -116,7 +116,7 @@ export default function Footer() {
         id="newsletter"
         className="container px-4 py-12 mx-auto space-y-16 sm:px-6 lg:py-16 lg:px-8"
       >
-        <div className="justify-between w-full space-y-6 lg:flex lg:space-y-0">
+        {/* <div className="justify-between w-full space-y-6 lg:flex lg:space-y-0">
           <div className="w-full">
             <h2 className="font-bold text-xl leading-10">
               Join our newsletter
@@ -138,7 +138,7 @@ export default function Footer() {
             </button>
           </div>
         </div>
-        <hr className="border border-gray-400 border-1 p-0 m-0" />
+        <hr className="border border-gray-400 border-1 p-0 m-0" /> */}
 
         <div className="xl:grid xl:grid-cols-4 xl:gap-8">
           <div className="grid grid-cols-2 md-grid-cols-3 gap-4 md:gap-8 mt-12 xl:mt-0 xl:col-span-4">

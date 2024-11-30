@@ -44,12 +44,16 @@ export default function Header() {
               <Logo />
             </Link>
           </div>
+
+          {/* mobile nav */}
           <div className="-my-2 -mr-2 lg:hidden">
             <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-business-secondary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-business-primary">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="w-6 h-6" aria-hidden="true" />
             </Popover.Button>
           </div>
+
+          {/* large screen nav */}
           <nav className="hidden space-x-10 lg:flex bg-gray-200 px-16 py-4 rounded-[60px] bg-opacity-30 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
             <Link
               to="/"
@@ -117,7 +121,7 @@ export default function Header() {
               Contact Us
             </Link> */}
           </nav>
-
+          {/* action buttons */}
           <div className="text-white text-center items-center justify-end hidden lg:flex lg:flex-1 lg:w-0">
             <a
               target="_blank"
