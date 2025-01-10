@@ -165,7 +165,7 @@ export default function Hero() {
               Benefits of <span className="lowercase">my750hrstracker</span>
             </h2>
           </div>
-          <div className="container grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-x-8 md:gap-y-6 mt-8 md:mt-16 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-x-8 md:gap-y-6 mt-8 md:mt-16 mx-auto">
             {data.map((d, i) => (
               <HeroAboutCard key={`icon-${i}`} data={d} />
             ))}

@@ -2,8 +2,8 @@ import React from "react";
 
 export default function HeroAboutCard(props) {
   return (
-    <div className="flex flex-col mt-4 md:mt-8">
-      <div className="w-10 mb-4">
+    <div className="grid grid-cols-1 gap-4 mt-4 md:mt-8">
+      <div className="w-10 h-10 mb-4">
         <div className="icon-content rounded p-2 flex justify-center text-center bg-business-primary text-white w-full h-full">
           <img
             className="text-center align-center"
