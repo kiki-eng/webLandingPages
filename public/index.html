@@ -48,4 +48,14 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <div id="root"></div>
   <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+  <script>
+    const timestamp = new Date().getTime();
+    const metaTag = document.querySelector('meta[property="og:image"]');
+
+    if (metaTag) {
+      const originalUrl = metaTag.getAttribute("content");
+      const updatedUrl = `${originalUrl}?t=${timestamp}`;
+      metaTag.setAttribute("content", updatedUrl);
+    }
+  </script>
 </body>

@@ -202,9 +202,9 @@ export default function Header() {
                 <p className="mt-6 text-base font-medium text-center text-business-primary">
                   Existing User?
                   <a
-                    href="/"
+                    href={process.env.REACT_APP_SIGNIN_URL}
                     rel="noopener"
-                    className="text-business-primary hover:text-indigo-500"
+                    className="text-business-primary hover:text-indigo-500 ml-1 underline"
                   >
                     Sign in
                   </a>
